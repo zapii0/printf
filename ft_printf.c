@@ -6,7 +6,7 @@
 /*   By: mzapora <mzapora@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/22 22:19:16 by mzapora           #+#    #+#             */
-/*   Updated: 2024/12/23 02:52:04 by mzapora          ###   ########.fr       */
+/*   Updated: 2024/12/25 01:13:56 by mzapora          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,23 +18,24 @@ int	Cformat(char *format, va_list va)
 
 	i = 0;
 	if (format == 'c')
-
+		i = ft_putchar_p(va_arg(va, int));
 	else if (format == 's')
-	
+		i = ft_putstr_p(va_arg(va, char *));
 	else if (format == 'p')
-	
+		
 	else if (format == 'd')
-	
+		i = ft_putdigit_p(va_arg(va, char *), 0);
 	else if (format == 'i')
-	
+		i = ft_putdigit_p(va_arg(va, char *), 0);
 	else if (format == 'u')
 	
 	else if (format == 'x')
-
+		i = ft_puthex_p(va_arg(va, int), 'x');
 	else if (format == 'X')
-
+		i = ft_puthex_p((va_arg(va, int)), 'X');
 	else if (format == '%')
-
+		i = write(1, '%', 1);
+	return (i);
 }
 
 int	ft_printf(const char *format, ...)
