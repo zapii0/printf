@@ -6,7 +6,7 @@
 /*   By: mzapora <mzapora@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/22 22:19:16 by mzapora           #+#    #+#             */
-/*   Updated: 2024/12/25 01:13:56 by mzapora          ###   ########.fr       */
+/*   Updated: 2024/12/27 05:14:54 by mzapora          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	Cformat(char *format, va_list va)
 	else if (format == 'i')
 		i = ft_putdigit_p(va_arg(va, char *), 0);
 	else if (format == 'u')
-	
+		i = ft_putUint_p(va_arg(va, int));
 	else if (format == 'x')
 		i = ft_puthex_p(va_arg(va, int), 'x');
 	else if (format == 'X')
