@@ -6,18 +6,18 @@
 /*   By: mzapora <mzapora@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 22:33:59 by mzapora           #+#    #+#             */
-/*   Updated: 2024/12/23 23:00:49 by mzapora          ###   ########.fr       */
+/*   Updated: 2024/12/29 20:36:55 by mzapora          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 int	ft_putdigit_p(int nb, int i)
 {
 	if (nb == -2147483648)
 	{
-		write(1, "-2147483648", 12);
-		return (12);
+		write(1, "-2147483648", 11);
+		return (11);
 	}
 	if (nb < 0)
 	{

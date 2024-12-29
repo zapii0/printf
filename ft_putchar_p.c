@@ -6,11 +6,11 @@
 /*   By: mzapora <mzapora@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 21:42:36 by mzapora           #+#    #+#             */
-/*   Updated: 2024/12/23 21:46:42 by mzapora          ###   ########.fr       */
+/*   Updated: 2024/12/29 20:29:04 by mzapora          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putchar_p(int c)
 {
