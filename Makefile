@@ -5,17 +5,17 @@ NAME		= libftprintf.a
 CC			= gcc -Wall -Wextra -Werror
 
 %.o: %.c
-	${CC} -I. -c $< -o ${<:.c=.o}
+	$(CC) -I. -c $< -o $(<:.c=.o)
 
-all:		${NAME}
+all:		$(NAME)
 
-$(NAME):	${OBJS}
-	ar rcs ${NAME} ${OBJS}
+$(NAME):	$(OBJS)
+	ar rcs $(NAME) $(OBJS)
 
 clean:
-			rm -f ${OBJS}
+			rm -f $(OBJS)
 
 fclean:		clean
-			rm -f ${NAME}
+			rm -f $(NAME)
 
 re:			fclean all

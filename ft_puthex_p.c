@@ -6,13 +6,13 @@
 /*   By: mzapora <mzapora@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/25 00:23:17 by mzapora           #+#    #+#             */
-/*   Updated: 2024/12/29 21:20:27 by mzapora          ###   ########.fr       */
+/*   Updated: 2024/12/29 22:15:26 by mzapora          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	putx(char *x,unsigned int i)
+int	putx(char *x, unsigned int i)
 {
 	int	j;
 

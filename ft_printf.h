@@ -6,7 +6,7 @@
 /*   By: mzapora <mzapora@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/22 22:33:52 by mzapora           #+#    #+#             */
-/*   Updated: 2024/12/29 21:09:30 by mzapora          ###   ########.fr       */
+/*   Updated: 2024/12/29 22:13:44 by mzapora          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,4 @@ int		ft_putchar_p(int c);
 int		ft_putdigit_p(int nb, int i);
 int		ft_puthex_p(unsigned int i, int c);
 int		ft_putuint_p(unsigned int n);
-# endif
+#endif

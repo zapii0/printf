@@ -6,7 +6,7 @@
 /*   By: mzapora <mzapora@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 22:33:59 by mzapora           #+#    #+#             */
-/*   Updated: 2024/12/29 20:36:55 by mzapora          ###   ########.fr       */
+/*   Updated: 2024/12/29 22:18:47 by mzapora          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ int	ft_putdigit_p(int nb, int i)
 	{
 		i = ft_putdigit_p(nb / 10, i);
 		nb = nb % 10;
-	}	
-		ft_putchar_p(nb + 48);
-		i++;
+	}
+	ft_putchar_p(nb + 48);
+	i++;
 	return (i);
 }

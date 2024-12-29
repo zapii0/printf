@@ -6,7 +6,7 @@
 /*   By: mzapora <mzapora@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 01:01:19 by mzapora           #+#    #+#             */
-/*   Updated: 2024/12/29 21:09:09 by mzapora          ###   ########.fr       */
+/*   Updated: 2024/12/29 22:14:27 by mzapora          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ int	ft_nlen(unsigned int n)
 
 char	*ft_utoa(unsigned int n)
 {
-	char *str;
-	int	len;
-	
+	char	*str;
+	int		len;
+
 	len = ft_nlen(n);
 	str = malloc(len + 1);
 	if (!str)
@@ -53,11 +53,10 @@ int	ft_putuint_p(unsigned int n)
 	if (n == 0)
 		i = ft_putchar_p('0');
 	else
-	{	
+	{
 		str = ft_utoa(n);
 		i = ft_putstr_p(str);
 		free(str);
 	}
 	return (i);
 }
-
