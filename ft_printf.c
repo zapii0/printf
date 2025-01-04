@@ -6,7 +6,7 @@
 /*   By: mzapora <mzapora@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/22 22:19:16 by mzapora           #+#    #+#             */
-/*   Updated: 2024/12/29 22:18:33 by mzapora          ###   ########.fr       */
+/*   Updated: 2025/01/04 18:59:22 by mzapora          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,24 +46,6 @@ int	ft_putptr(unsigned long long n)
 	return (i);
 }
 
-int	specifire(char *format)
-{
-	while (*format)
-	{
-		if (*format == '%' && *(format + 1) == '%')
-			++format;
-		else if ((*format == '%' && !*(format + 1)) || (*format == '%'
-				&& *(format + 1) != 'c' && *(format + 1) != 'd'
-				&& *(format + 1) != 'p' && *(format + 1) != 'u'
-				&& *(format + 1) != 'i' && *(format + 1) != 's'
-				&& *(format + 1) != 'x' && *(format + 1) != 'X'
-				&& !*(format + 2)))
-			return (0);
-		++format;
-	}
-	return (1);
-}
-
 int	cformat(char *format, va_list va)
 {
 	int	i;
@@ -99,8 +81,6 @@ int	ft_printf(const char *format, ...)
 		return (0);
 	va_start(va, format);
 	i = 0;
-	if (!specifire((char *)format))
-		return (-1);
 	while (*format)
 	{
 		if (*format == '%')
